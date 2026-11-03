@@ -1,0 +1,24 @@
+/* Interaction effects + elevation */
+:root {
+  --effect-btn-hover-primary:4px 4px 4px -2px var(--color-effect-hover-brand);
+  --effect-btn-hover-neutral:4px 4px 4px -2px var(--color-effect-hover-neutral);
+  --effect-btn-hover-error:4px 4px 4px -2px var(--color-effect-hover-error);
+  --effect-btn-hover-success:4px 4px 4px -2px var(--color-effect-hover-success);
+  --effect-btn-focused-primary:0 0 0 2px var(--white), 0 0 0 4px var(--color-effect-focus-brand);
+  --effect-btn-focused-error:0 0 0 2px var(--white), 0 0 0 4px var(--color-effect-focus-error);
+  --effect-btn-focused-success:0 0 0 2px var(--white), 0 0 0 4px var(--color-effect-focus-success);
+  --effect-toggle-hover-primary:0 0 0 6px var(--gray-20);
+  --effect-radiobtn-hover-primary:0 0 0 4px var(--gray-20);
+  --effect-input-focused:0 0 0 3px var(--blue-20);
+  /* Elevation */
+  --shadow-xs:0 1px 2px rgba(11,20,36,0.06);
+  --shadow-s:0 2px 6px rgba(11,20,36,0.08);
+  --shadow-m:0 8px 24px rgba(11,27,77,0.10);
+  --shadow-l:0 16px 40px rgba(11,27,77,0.14);
+  /* Signature "sticker" offset shadow (ink) */
+  --shadow-offset-ink:3px 4px 0 0 var(--blue-100);
+  --shadow-offset-brand:3px 4px 0 0 var(--blue-70);
+  /* Motion */
+  --ease-standard:cubic-bezier(0.2,0,0,1);
+  --duration-fast:120ms; --duration-base:180ms; --duration-slow:280ms;
+}
