@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dự Án Nuôi Em · Hồ sơ em bé Núp Cute 001 - Sài Gòn</title>
+<meta name="description" content="Dự Án Nuôi Em: nhận nuôi em bé Núp Cute 001 ở Sài Gòn theo gói, từ bữa sáng đến cả tuần. Trang đùa vui, mọi khoản nuôi đều tự nguyện.">
+<link rel="icon" type="image/png" href="images/logo-mark.png">
+<link rel="stylesheet" href="design-system/styles.css">
+<link rel="stylesheet" href="site.css">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Dự án nuôi Núp, về đầu trang">
+      <img class="logo-h" src="images/logo-horizontal.png" width="4183" height="742" alt="Dự án nuôi Núp">
+    </a>
+    <nav class="nav" aria-label="Điều hướng chính">
+      <a href="#goi">Gói nuôi</a>
+      <a href="#quy-trinh">Quy trình nuôi</a>
+      <a href="#co-dong">Cổ đông nuôi Núp</a>
+      <a href="#nhat-ky">Nhật ký cuộc sống</a>
+      <a href="#faq">Hỏi đáp</a>
+    </nav>
+    <a class="btn btn-glow btn-sm" href="#goi">Nuôi em ngay</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 1. Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="grid">
+        <div>
+          <span class="eyebrow">Hồ sơ em bé Núp Cute 001 - Sài Gòn</span>
+          <h1>Nuôi em một bữa, <em><span class="grad">em nhớ cả đời.</span></em></h1>
+          <p class="lead">Em đi làm chăm chỉ, ăn uống đúng giờ, chỉ có cái ví là “nghỉ phép dài hạn”. Anh/chị chọn gói nuôi em, quét mã, em hứa sao kê đầy đủ từng món đã ăn và chấm điểm quán: ngon thì khen, dở thì em chịu đau thay anh/chị.</p>
+          <div class="btn-row">
+            <a class="btn btn-brand" href="#goi">Chọn gói nuôi</a>
+            <a class="btn btn-outline" href="#nhat-ky">Xem nhật ký cuộc sống</a>
+          </div>
+        </div>
+
+        <aside class="panel" aria-label="Hồ sơ em bé Núp Cute 001">
+          <span class="stamp">Mã hồ sơ: 001</span>
+          <div class="profile-top">
+            <figure class="photo">
+              <img src="images/du-an-nuoi-em.jpg" width="445" height="583" alt="Ảnh thẻ hồi nhỏ của em bé Núp Cute 001, đeo khăn quàng đỏ">
+            </figure>
+            <div>
+              <h3>Em bé Núp Cute 2k3</h3>
+              <span class="nick">Biệt danh: Rùa Con Mập Mạp</span>
+              <small>Em bé còn đói, sống thoi thóp day by day!</small>
+              <div class="chips">
+                <span class="chip g1">Ăn nhiều</span>
+                <span class="chip g2">Mê cơm tấm</span>
+                <span class="chip g3">Chỉ yêu mình em</span>
+                <span class="chip g4">Ví nhẹ, bụng nặng</span>
+                <span class="chip g1">Siêng ăn, nhác làm</span>
+              </div>
+            </div>
+          </div>
+          <div class="hit">
+            <div class="head"><span>Mức no bụng hiện tại</span><b id="meterPct">19%</b></div>
+            <div class="meter-bar" role="img" aria-label="Mức no bụng hiện tại: 19 phần trăm, đang đói"><div class="meter-fill" id="meterFill" style="width:19%"></div></div>
+            <p id="caption" class="urgent">Em bé đang đói, cần được cho ăn.</p>
+            <img class="mabu" id="mabu" src="images/mabu-meter.png" width="120" height="140" alt="" aria-hidden="true"></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Gói nuôi + thanh toán -->
+  <section id="goi" class="tight">
+    <div class="wrap">
+      <span class="eyebrow">Gói nuôi</span>
+      <h2 style="max-width: 24ch">Bạn muốn nuôi em <em>trong bao lâu?</em></h2>
+      <p class="lead lead-nowrap" style="margin-top: var(--scale-l); font-size: var(--font-size-body-m); line-height: var(--line-height-body-m)">Mỗi gói tính theo thời gian ăn, không tính theo cân nặng. Giá theo quán vỉa hè Sài Gòn.</p>
+
+      <div class="packs mt" role="radiogroup" aria-label="Chọn gói nuôi">
+        <label class="item">
+          <input type="radio" name="goi" value="30000" data-label="Nuôi nhẹ · 1 bữa sáng" data-short="Gói nuôi nhẹ" data-memo="NUOI EM GOI NHE" data-pct="15">
+          <span class="pack"><span class="tag">Thử nuôi</span><span class="name">Nuôi nhẹ</span><span class="price">30.000đ</span><span class="note">Bánh mì ốp la và ly cà phê sữa đá.</span></span>
+        </label>
+        <label class="item">
+          <input type="radio" name="goi" value="70000" data-label="Nuôi vừa · 1 bữa trưa" data-short="Gói nuôi vừa" data-memo="NUOI EM GOI VUA" data-pct="40" checked>
+          <span class="pack"><span class="tag">Phổ biến</span><span class="name">Nuôi vừa</span><span class="price">70.000đ</span><span class="note">Đĩa cơm tấm sườn bì chả, thêm ly cà phê GS25.</span></span>
+        </label>
+        <label class="item">
+          <input type="radio" name="goi" value="150000" data-label="Nuôi đàng hoàng · cả ngày" data-short="Gói nuôi đàng hoàng" data-memo="NUOI EM CA NGAY" data-pct="75">
+          <span class="pack"><span class="tag">Cả ngày</span><span class="name">Nuôi đàng hoàng</span><span class="price">150.000đ</span><span class="note">Gà rán Texas - Jollibee - Cơm tấm Phúc Lộc Thọ.</span></span>
+        </label>
+        <label class="item">
+          <input type="radio" name="goi" value="500000" data-label="Nuôi dài hạn · cả tuần" data-short="Gói nuôi dài hạn" data-memo="NUOI EM CA TUAN" data-pct="100">
+          <span class="pack"><span class="tag">Phụ huynh VIP</span><span class="name">Nuôi dài hạn</span><span class="price">500.000đ</span><span class="note">Cả tuần khỏi đếm tiền trước khi vào quán.</span></span>
+        </label>
+        <label class="item">
+          <input type="radio" name="goi" value="custom" data-label="Nuôi tuỳ tâm" data-short="Gói nuôi tuỳ tâm" data-memo="NUOI EM TUY TAM" data-pct="">
+          <span class="pack">
+            <span class="tag">Linh hoạt</span>
+            <span class="name">Tuỳ tâm</span>
+            <span class="custom-field"><input id="customAmount" type="number" inputmode="numeric" min="1000" step="1000" value="500000" aria-label="Số tiền tuỳ tâm, đơn vị đồng"><span>đ</span></span>
+            <span class="note">Bao nhiêu cũng quý. Nhưng tốt nhất là nên 500K.</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="pay" aria-live="polite">
+        <div class="pay-col"><div class="pay-head"><span class="pay-step">01</span><span>Chuyển khoản</span><span class="pay-tag">Đã xác minh</span></div>
+        
+          <div class="row hl"><div><span class="lbl">Ngân hàng</span><span class="val">MB Bank</span></div></div>
+          <div class="row hl"><div><span class="lbl">Chủ tài khoản</span><span class="val">Trần Xuân Ngọc</span></div></div>
+          <div class="row hl acc"><div><span class="lbl">Số tài khoản</span><span class="val" id="account">0865976990</span></div><button class="copy" type="button" data-copy="account">Sao chép</button></div>
+          <div class="row"><div><span class="lbl">Số tiền</span><span class="val big" id="amount"></span></div><button class="copy" type="button" data-copy="amountRaw">Sao chép</button></div>
+          <div class="row"><div><span class="lbl">Nội dung chuyển khoản</span><span class="val" id="memo"></span></div><button class="copy" type="button" data-copy="memo">Sao chép</button></div>
+          <span id="amountRaw" hidden></span>
+        </div>
+        <div class="qr">
+          <img src="images/ma-qr-mbbank.png" width="480" height="480" alt="Mã QR VietQR chuyển khoản tới Trần Xuân Ngọc, MB Bank, số tài khoản 0865976990">
+          <p>Mở app ngân hàng, quét mã rồi nhập số tiền theo gói đã chọn. Tên người nhận hiện trong app, bạn đối chiếu trước khi gửi nhé.</p>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="done-cta">
+        <button class="btn btn-brand" type="button" id="doneBtn" aria-expanded="false" aria-controls="cam-on">Nuôi em thành công</button>
+        <span class="hint">Giao dịch thành công! Bấm vào đây để nhận lời cảm ơn nho nhỏ từ dạ dày em.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lời cảm ơn từ em Núp (điền bằng JS sau khi xác nhận chuyển khoản) -->
+  <section id="cam-on" class="tight" hidden aria-labelledby="h-cam-on">
+    <div class="wrap">
+      <span class="eyebrow">Lời cảm ơn từ em Núp</span>
+      <h2 id="h-cam-on"><span id="camTitle">Cảm ơn anh/chị nhiều lắm.</span></h2>
+      <p class="lead lead-nowrap" id="camBody" style="margin-top: var(--scale-l); font-size: var(--font-size-body-m); line-height: var(--line-height-body-m)"></p>
+      <div class="cheer" id="cheer" aria-hidden="true"><img src="images/mabu-cheer.png" width="220" height="212" alt=""><p class="cheer-bubble">Ngon quá, cảm ơn anh/chị!</p></div>
+      <div class="cam-meter mt" aria-live="polite">
+        <div class="cam-head"><span>Mức no bụng sau khi được nuôi</span><b id="camPct">19%</b></div>
+        <div class="cam-bar" role="progressbar" aria-label="Mức no bụng" aria-valuemin="0" aria-valuemax="100" aria-valuenow="19"><div class="cam-fill" id="camFill"></div></div>
+        <p class="cam-note" id="camNote"></p>
+      </div>
+      <div class="btn-row" style="margin-top: var(--scale-2xl)">
+        <a class="btn btn-outline" href="#nhat-ky">Xem Log Life</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Quy trình + chứng nhận (mission card) -->
+  <section id="quy-trinh" class="tight">
+    <div class="wrap">
+      <div class="mission">
+        <div>
+          <span class="eyebrow">Quy trình nuôi</span>
+          <h2>3 bước nuôi em, <em>không giấy tờ.</em></h2>
+          <ol>
+            <li><span class="num">01</span><div><b>Chọn gói nuôi</b><span>Xem túi tiền, xem cả lòng thương, rồi chọn gói hợp.</span></div></li>
+            <li><span class="num">02</span><div><b>Quét mã chuyển khoản</b><span>Gửi lời nhắn và nam mô a di đà phật, thiện tại thiện tại.</span></div></li>
+            <li><span class="num">03</span><div><b>Nhận sao kê</b><span>Sao kê chi tiết, đảm bảo em không đớp.</span></div></li>
+          </ol>
+        </div>
+        <div class="cert" aria-label="Giấy chứng nhận phụ huynh nuôi em">
+          <p class="small">Dự án Nuôi Em trân trọng chứng nhận</p>
+          <label for="sponsorName">Tên ân nhân</label>
+          <input id="sponsorName" type="text" maxlength="30" placeholder="Nhập tên bạn vào đây">
+          <button class="btn btn-brand cert-submit" type="button" id="certSubmit">Gửi chứng nhận</button>
+          <p class="cert-thanks" id="certThanks" hidden></p>
+          <p class="main">là <b>Phụ huynh nuôi em</b> với <b id="cPack">Gói nuôi vừa</b></p>
+          <p class="small">Đã đóng góp <b id="cAmount">70.000đ</b> cho bao tử của em bé Núp Cute 001</p>
+          <p class="sign">Em Núp đang đói!!!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Nhật ký ăn uống -->
+  <section id="nhat-ky" class="tight">
+    <div class="wrap">
+      <span class="eyebrow">Nhật ký cuộc sống</span>
+      <h2 style="max-width: 22ch">Tiền đi đâu, <em>em log hết.</em></h2>
+      <p class="lead lead-nowrap" style="margin-top: var(--scale-l); font-size: var(--font-size-body-m); line-height: var(--line-height-body-m)">Mỗi bữa ăn, mỗi lần nạp thẻ nuôi game, mỗi lần đi bar, bay lắc đều được ghi log. Đây là hoạt động tuần vừa rồi của em!</p>
+
+      <div class="term mt" role="region" aria-label="Nhật ký dạng journalctl trên VPS (dữ liệu ví dụ)">
+        <div class="term-bar">
+          <span class="dots3" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="term-title">em-be@vps-saigon: ~ — ssh</span>
+          <span class="term-badge">Cuộn để xem</span>
+        </div>
+        <pre class="term-body" tabindex="0"><code><span class="pr">em-be@vps-saigon:~$</span> journalctl -u nuoi-nup.service -f --since today
+<span class="c-dim">-- Journal begins at Mon 2026-11-02 23:50:00 +07. --</span>
+<span class="ts">Nov 03 06:45:12</span> <span class="host">vps-saigon</span> <span class="unit">systemd[1]</span>: Started nuoi-nup.service - Em bé Núp Cute 001 thức dậy.
+<span class="ts">Nov 03 06:45:13</span> <span class="host">vps-saigon</span> <span class="unit">nuoi-nup[1094]</span>: bụng réo lần 3, status=hungry
+<span class="ts">Nov 03 06:52:30</span> <span class="host">vps-saigon</span> <span class="unit">sshd[2101]</span>: <span class="ok">Accepted</span> xôi for em-be from xe-xôi-đầu-hẻm port 15000 ssh2
+<span class="ts">Nov 03 07:20:41</span> <span class="host">vps-saigon</span> <span class="unit">sshd[2210]</span>: <span class="ok">Accepted</span> cà-phê-sữa-đá for em-be from quán-vỉa-hè port 25000 ssh2
+<span class="ts">Nov 03 07:46:05</span> <span class="host">vps-saigon</span> <span class="unit">sshd[2277]</span>: <span class="ok">Accepted</span> bánh-mì for em-be from tiệm-bánh-mì-cô-Ba port 20000 ssh2
+<span class="ts">Nov 03 08:05:03</span> <span class="host">vps-saigon</span> <span class="unit">kernel</span>: <span class="err">traffic: cầu Sài Gòn blocked, delay=2h, hunger +40%</span>
+<span class="ts">Nov 03 09:00:00</span> <span class="host">vps-saigon</span> <span class="unit">CRON[812]</span>: (em-be) CMD (/usr/bin/xem-ho-so-em --moi-ngay)
+<span class="ts">Nov 03 09:00:01</span> <span class="host">vps-saigon</span> <span class="unit">nuoi-nup[1094]</span>: profile viewed by anh-chi-ghé-thăm (lượt xem hôm nay: 1, chuỗi ngày: 7)
+<span class="ts">Nov 03 09:30:18</span> <span class="host">vps-saigon</span> <span class="unit">sshd[3317]</span>: <span class="err">Failed</span> password for em-be from ví-tiền port 22 ssh2 <span class="warn">(insufficient funds)</span>
+<span class="ts">Nov 03 09:30:19</span> <span class="host">vps-saigon</span> <span class="unit">sshd[3317]</span>: Connection closed by authenticating user em-be ví-tiền port 22 [preauth]
+<span class="ts">Nov 03 10:30:44</span> <span class="host">vps-saigon</span> <span class="unit">sshd[3590]</span>: <span class="ok">Accepted</span> cà-phê-GS25 for em-be from GS25 port 20000 ssh2
+<span class="ts">Nov 03 11:58:27</span> <span class="host">vps-saigon</span> <span class="unit">sshd[4402]</span>: <span class="ok">Accepted</span> cơm-tấm for em-be from quán-cô-Tư port 70000 ssh2
+<span class="ts">Nov 03 12:15:00</span> <span class="host">vps-saigon</span> <span class="unit">nuoi-nup[1094]</span>: rank=9/10 quán=quán-cô-Tư note="thiếu trứng ốp la"
+<span class="ts">Nov 03 13:20:10</span> <span class="host">vps-saigon</span> <span class="unit">sshd[4655]</span>: <span class="ok">Accepted</span> cơm-chay for em-be from quán-chay-đầu-ngõ port 40000 ssh2
+<span class="ts">Nov 03 14:00:00</span> <span class="host">vps-saigon</span> <span class="unit">systemd[1]</span>: Started fc-online.service - Chơi FC Online.
+<span class="ts">Nov 03 15:40:09</span> <span class="host">vps-saigon</span> <span class="unit">nuoi-nup[1094]</span>: <span class="warn">WARNING</span> fullness=19% — đề nghị cho ăn
+<span class="ts">Nov 03 15:40:10</span> <span class="host">vps-saigon</span> <span class="unit">fail2ban.actions</span>: <span class="warn">NOTICE</span> [sshd] Ban đồ-ăn-vặt-lúc-3h-chiều 192.168.0.19
+<span class="ts">Nov 03 16:10:55</span> <span class="host">vps-saigon</span> <span class="unit">sshd[5011]</span>: <span class="ok">Accepted</span> nước-tăng-lực for em-be from GS25 port 12000 ssh2
+<span class="ts">Nov 03 16:12:00</span> <span class="host">vps-saigon</span> <span class="unit">systemd[1]</span>: fc-online.service: Deactivated successfully. Consumed 2h 12min CPU time.
+<span class="ts">Nov 03 16:30:00</span> <span class="host">vps-saigon</span> <span class="unit">systemd[1]</span>: Started di-bo-sai-gon.service - Đi dạo Sài Gòn.
+<span class="ts">Nov 03 16:42:18</span> <span class="host">vps-saigon</span> <span class="unit">nuoi-nup[1094]</span>: location="phố đi bộ Nguyễn Huệ" steps=4210 mood=chill
+<span class="ts">Nov 03 17:25:37</span> <span class="host">vps-saigon</span> <span class="unit">nuoi-nup[1094]</span>: location="cầu Bình Lợi" steps=9870 view=hoàng-hôn status=đẹp-xỉu
+<span class="ts">Nov 03 18:10:00</span> <span class="host">vps-saigon</span> <span class="unit">systemd[1]</span>: di-bo-sai-gon.service: Deactivated successfully. Consumed 1h 40min CPU time.
+<span class="ts">Nov 03 19:02:55</span> <span class="host">vps-saigon</span> <span class="unit">sshd[5118]</span>: <span class="ok">Accepted</span> bún-đậu-mắm-tôm for em-be from hàng-bún-đậu-hẻm port 55000 ssh2
+<span class="ts">Nov 03 19:15:00</span> <span class="host">vps-saigon</span> <span class="unit">nuoi-nup[1094]</span>: rank=10/10 quán=hàng-bún-đậu-hẻm note="mắm tôm đúng vị, em xin thêm chén nữa"
+<span class="ts">Nov 03 20:00:00</span> <span class="host">vps-saigon</span> <span class="unit">systemd[1]</span>: Started toc-chien.service - Chơi Tốc Chiến.
+<span class="ts">Nov 03 22:30:00</span> <span class="host">vps-saigon</span> <span class="unit">systemd[1]</span>: toc-chien.service: Deactivated successfully. Consumed 2h 30min CPU time.
+<span class="ts">Nov 03 23:50:00</span> <span class="host">vps-saigon</span> <span class="unit">kernel</span>: <span class="err">Out of memory: Killed process 4242 (bao-tử)</span> total-vm:19%
+<span class="pr">em-be@vps-saigon:~$</span> <span class="cursor" aria-hidden="true"></span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cổ đông nuôi Núp -->
+  <section id="co-dong" class="tight">
+    <div class="wrap">
+      <span class="eyebrow">Cổ đông nuôi Núp</span>
+      <h2 style="max-width: 24ch">Bảng vàng <em>những người, nuôi Núp.</em></h2>
+      <p class="lead lead-nowrap" style="margin-top: var(--scale-l); font-size: var(--font-size-body-m); line-height: var(--line-height-body-m)">Ai nuôi em sẽ được ghi tên vào đây. Hiện chưa có cổ đông nào, ba ghế đầu đang chờ bạn.</p>
+      <div class="grid cols-3 mt">
+        <div class="card seat">
+          <span class="ic"><i class="ph ph-crown-simple"></i></span>
+          <h3>Cổ đông số 1</h3>
+          <p>Ghế đang trống. Người nuôi đầu tiên được em nhớ mãi, kể cả lúc ăn no.</p>
+        </div>
+        <div class="card seat">
+          <span class="ic"><i class="ph ph-medal"></i></span>
+          <h3>Cổ đông số 2</h3>
+          <p>Ghế đang trống. Cổ tức là một lời cảm ơn và điểm chấm quán ăn.</p>
+        </div>
+        <div class="card seat">
+          <span class="ic"><i class="ph ph-star"></i></span>
+          <h3>Cổ đông số 3</h3>
+          <p>Ghế đang trống. Quyền lợi gồm giấy chứng nhận phụ huynh có tên bạn.</p>
+        </div>
+      </div>
+      <div class="btn-row" style="margin-top: var(--scale-2xl)"><a class="btn btn-brand" href="#goi">Giành ghế cổ đông</a></div>
+    </div>
+  </section>
+
+  <!-- 7. FAQ -->
+  <section id="faq" class="tight">
+    <div class="wrap">
+      <span class="eyebrow">Điều khoản nuôi</span>
+      <h2 style="margin-bottom: var(--scale-3xl)">Đọc kỹ <em>trước khi nuôi.</em></h2>
+            <details class="faq" open>
+        <summary>Lừa đảo thì sao em dám ghi tên thật lên giấy chứng nhận?<i class="ph ph-plus"></i></summary>
+        <p>Em không hứa lãi, không bán gì. Tên người nhận hiện ngay trong app để anh/chị đối chiếu trước khi chuyển.</p>
+      </details>
+      <details class="faq">
+        <summary>Nuôi rồi có được hoàn tiền không?<i class="ph ph-plus"></i></summary>
+        <p>Hoàn tiền thì em không có, nhưng em hoàn lại bằng một ly trà đá và lời cảm ơn tới bến.</p>
+      </details>
+      <details class="faq">
+        <summary>Nuôi bao lâu thì em mập?<i class="ph ph-plus"></i></summary>
+        <p>Em hứa no, chứ không hứa mập. Mập hay không là chuyện giữa em và cái cân.</p>
+      </details>
+      <details class="faq">
+        <summary>Mình không muốn chuyển tiền thì sao?<i class="ph ph-plus"></i></summary>
+        <p>Cứ ghé đọc, cười một cái là em đã no được một nửa rồi.</p>
+      </details>
+      <details class="faq">
+        <summary>Nuôi rồi có được hoàn tiền không?<i class="ph ph-plus"></i></summary>
+        <p>Dự án chưa có chính sách hoàn tiền. Nhưng nếu bạn đói khi ghé Sài Gòn, em mời lại một ly cà phê.</p>
+      </details>
+      <details class="faq">
+        <summary>Nuôi bao lâu thì em mập?<i class="ph ph-plus"></i></summary>
+        <p>Dự án chỉ cam kết no, không cam kết mập. Cân nặng thuộc về di truyền và số lần ăn khuya.</p>
+      </details>
+      <details class="faq">
+        <summary>Mình không muốn chuyển tiền thì sao?<i class="ph ph-plus"></i></summary>
+        <p>Hoàn toàn ổn. Bạn ghé thăm, đọc tới đây và mỉm cười đã là một gói nuôi tinh thần miễn phí.</p>
+      </details>
+      <details class="faq">
+        <summary>Em có người yêu chưa?<i class="ph ph-plus"></i></summary>
+        <p>Em yêu một cô bé.....</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- 8. Dải kết -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="band">
+        <h2>Em đói rồi, anh chị ơi.</h2>
+        <p class="band-lead">Chọn một gói nuôi, quét mã, em ăn thay phần anh chị, ăn một mình nhưng no cả hai.</p>
+        <div class="btn-row">
+          <a class="btn btn-brand" href="#goi">Nuôi em ngay</a>
+          <button class="btn btn-outline" type="button" id="shareBtn"><i class="ph ph-link"></i> Rủ người khác cùng nuôi</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand"><img src="images/logo-nuoi-nup.png" width="1073" height="923" alt="Logo Dự án nuôi Núp"></div>
+  </div>
+</footer>
+
+<div class="toast-wrap"><div class="toast" id="toast" role="status" aria-live="polite"></div></div>
+<script src="site.js"></script>
+</body>
+</html>
