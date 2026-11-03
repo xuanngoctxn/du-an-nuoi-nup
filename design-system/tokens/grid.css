@@ -1,0 +1,6 @@
+:root {
+  --grid-desktop-columns:12; --grid-desktop-column-width:78px; --grid-desktop-gutter:24px; --grid-desktop-max:1224px; /* type: center, margin flexible */
+  --grid-tablet-columns:8;   --grid-tablet-gutter:24px;  --grid-tablet-margin:64px;   /* type: stretch */
+  --grid-mobile-columns:4;   --grid-mobile-gutter:16px;  --grid-mobile-margin:16px;   /* type: stretch */
+  --bp-tablet:768px; --bp-desktop:1280px;
+}
